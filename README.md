@@ -1,16 +1,24 @@
-# ActiveDirectoryHomeLab
-All things related to my active directory experiments!
-Loaded an ISO into virtualbox and got to work. After windows server 2016 was installed. 
-Started getting into best practices and named my server DC01-WV bc I am from WV and it sounds way more legit compared to the name it was giving me. 
-Went through and created my forest, then setting up Active Directory by installing it from the manage window. 
+# Active Directory HomeLab
+<a href="https://imgur.com/QDq9l6q"><img src="https://i.imgur.com/QDq9l6q.png" title="source: imgur.com" /></a>
 
+## Introduction
+Set up and created a domain controller. I set up/ran active directory and created 1k+ active directory user accounts using a powershell script. I assigned IP addresses and even had to do some troubleshooting with the powershell commands and networking. 
+
+### Procedures
+
+Loaded an ISO into virtualbox and got to work. After windows server 2016 was installed. 
+Started getting into best practices and named my server DC01-WV because I am from WV and it sounds way more legit compared to the name it was giving me. 
+
+
+Went through and created my forest, then set up Active Directory by installing it from the manage window.
+<a href="https://imgur.com/Hx6Rhz2"><img src="https://i.imgur.com/Hx6Rhz2.png" title="source: imgur.com" /></a>
 
 
 Installed a RAS/NAT
 -to allow our clients to get access to the internet. 
 -went to tools in my server and clicked on routing & remote access.
 -set up NAT 
-*insert NAT Screenshot*
+<a href="https://imgur.com/pjDbRMb"><img src="https://i.imgur.com/pjDbRMb.png" title="source: imgur.com" /></a>
 
 -Went to Manage;add roles and features 
 -looked up and added DHCP Server
@@ -50,7 +58,9 @@ Realized that I didn't have a router set up in my server options so I added that
 I then tried running ipconfig on my client1 computer and still wasn't getting an internet connection. I went back to my domain controller, looked into my internal network and realized I didn't assign an IP address. I corrected this and finally fixed my issue. 
 *Insertscreenshot*
 
-*insertwhoamiconfirmation* 
+
+### Confirming the Client1 computer is part of my domain. 
+<a href="https://imgur.com/0E6Q8Ri"><img src="https://i.imgur.com/0E6Q8Rib.png" title="source: imgur.com" /></a>
 
 Excited to have my own little lab to run experiments on now!
 
