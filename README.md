@@ -1,4 +1,4 @@
-# Active Directory HomeLab
+# Active Directory Home Lab
 <a href="https://imgur.com/QDq9l6q"><img src="https://i.imgur.com/QDq9l6q.png" title="source: imgur.com" /></a>
 
 ## Introduction
